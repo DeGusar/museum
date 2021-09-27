@@ -1,0 +1,60 @@
+.visiting__bigtext {
+    font-family: Roboto;
+font-style: normal;
+font-weight: 100;
+font-size: 22px;
+line-height: 26px;
+color: black;
+padding-top: 21px;
+}
+
+.visiting__smalltext {
+    font-family: Roboto;
+font-style: normal;
+font-weight: 100;
+font-size: 18px;
+line-height: 21px;
+color:black;
+padding-top: 11px;
+}
+
+.layout-6-column {
+     padding-bottom: 75px;
+}
+
+.wrapper__visiting {
+    padding-top: 75px;
+}
+
+.layout__visiting {
+    padding-top: 103px;
+}
+
+
+.card-title_bordered {
+    position: relative;
+}
+
+.card-title_bordered::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 2px;
+    background-color: $color-red;
+    width: 300px;
+}
+
+.layout-6-column a:hover {
+    .card-title_bordered::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        height: 2px;
+        background-color: $color-red;
+        width: 100%;
+        @extend %transition;
+        
+    }
+}

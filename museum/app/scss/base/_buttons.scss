@@ -1,0 +1,87 @@
+.button {
+    width: 360px;
+    height: 75px;
+    border-radius: 10px;
+    background-color: $color-red ;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    color: white;
+    @extend %transition ;
+    & a {
+        font-style: normal;
+    font-weight: 100;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    color: white;
+    }
+}
+
+.button:hover {
+    background: $color-gold;
+}
+
+.button__previous, .button__play, .button__next, .button__mute, .button__fullscreen {
+background-color: black;
+}
+
+.button__main {
+    background-image: inherit;
+    background-position: center;
+}
+
+
+
+
+
+.button__buy {
+    @extend %transition ;
+    width: 175px;
+height: 50px;
+background: $color-black;
+border-radius: 2px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 2px;
+    color: $color-white;
+    
+}
+
+.button__buy:hover {
+    background: $color-gold;
+}
+
+.book {
+    width: 220px;
+    height: 45px;
+   
+    background-color: $color-red ;
+    font-style: normal;
+    
+    @extend %transition ;
+    
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 22px;
+line-height: 26px;
+
+color: #FFFFFF;
+
+}
+
+.book:hover {
+    background: $color-gold;
+}
+
+
+

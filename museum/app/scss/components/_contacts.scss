@@ -1,0 +1,33 @@
+.contacts__content {
+    flex: 1 1 auto;
+}
+
+.contacts__layout {
+    padding-top: 103px;
+}
+
+.contacts__boldtext {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+}
+.contacts__text {
+    font-style: normal;
+font-weight: 300;
+font-size: 22px;
+line-height: 26px;
+padding-top: 25px;
+    & a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.contacts__content p:nth-child(3){
+    padding-top: 50px ;
+}
+
+.wrapper__contacts {
+    padding-top: 75px;
+}

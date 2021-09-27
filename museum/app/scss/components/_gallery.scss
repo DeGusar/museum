@@ -1,0 +1,50 @@
+.gallery {
+    background-color: $color-background;
+}
+
+.wrapper__gallery {
+    
+    padding-top: 75px;
+}
+
+.picture__container {
+    overflow: hidden;
+    margin-top: 75px;
+    height: 1960px;
+    width: 100%;
+    position: relative;
+}
+ 
+.picture__inner-container {
+    height: 2850px;
+    width: 100%;
+    columns: 3;
+    column-gap: 36px;
+   
+}
+.gallery-img {
+    margin-bottom: 24px;
+}
+
+.img1 {
+    margin-top: 50px;
+}
+.img11 {
+    margin-top: 50px;
+}
+.gallery__shadow {
+    position: absolute;
+width: 1440px;
+height: 360px;
+left: 0px;
+bottom: 0px;
+
+background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+z-index: 1;
+}
+
+
+
+
+
+ 

@@ -1,0 +1,202 @@
+.tickets {
+    background: $color-white;
+}
+
+.wrapper__tickets {
+    padding-top: 75px;
+}
+
+.tickets__layout {
+    padding-top: 102px;
+}
+
+.tickets-radio__text {
+display: inline-block;
+vertical-align: middle;
+font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+font-size: 22px;
+line-height: 25px;
+color: $color-black;
+
+
+
+position: relative;
+padding-left: 40px;
+}
+
+.tickets-radio__text input[type="radio"]{
+    display: none;
+}
+.tickets-radio__text span {
+    height: 18px;
+    width: 18px;;
+    position: absolute;
+    display: block;
+   left: 0;
+   top: 4px;
+   border: 2px solid $color-black;
+   border-radius: 50%;
+   &::after{ content: "";
+    width: 7px;
+height: 7px;
+background: $color-black;
+display: block;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%) scale(0);
+border-radius: 50%;
+transition: 300ms ease-in-out 0s;
+
+   }
+}
+
+
+
+.tickets-radio__text input[type="radio"]:checked ~ span::after {
+    transform: translate(-50%, -50%) scale(1);
+
+}
+
+.tickets__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+   
+   
+}
+
+.tickets__purchase {
+    margin-left: 60px;
+    display: flex;
+    flex: 1 1 660px; 
+    justify-content: space-between;
+
+}
+
+.tickets__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+color: $color-black;
+
+}
+.tickets__margin {
+    margin-bottom:50px ;
+}
+
+.tickets__input {
+    all: unset;
+    width: 85px;
+    text-align: center;
+    font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+font-size: 22px;
+line-height: 26px;
+    
+}
+
+.tickets__amount input[type='number']::-webkit-inner-spin-button, 
+.tickets__amount input[type='number']::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.tickets__amount{
+    border: 3px solid $color-black;
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 32px;
+line-height: 37px;
+text-align: center;
+color: $color-black;
+width: 150px;
+
+height: 50px;
+display: flex;
+
+}
+
+.button__plus, .button__minus {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    color: $color-black;
+    background-color: $color-white;
+    width: 18px;
+}
+
+.button__plus {
+    margin-left: 11px;
+    &:hover{
+        color: $color-gold;
+        @extend %transition;
+    }
+}
+
+
+
+.button__minus:hover {
+    color: $color-gold;
+    @extend %transition ;
+ }
+
+.amount {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.amount__content {
+    font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+font-size: 22px;
+line-height: 26px;
+color: $color-black;
+align-self: start;
+margin-left: 26px;
+}
+
+.title__total {
+    padding-top: 50px;
+    letter-spacing: 1.65px;
+}
+
+.button__buy {
+    margin-top: 60px;
+}
+
+.amount__eighteen {
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+.amount__sixty {
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+.tickets-radio__text:hover {
+    color: $color-gold;
+    @extend %transition ;
+}
+
+.parallax {
+    margin-top: 75px;
+    width: 100%;
+    height: 400px;
+    background-image: url("../../app/images/parallax.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
