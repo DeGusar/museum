@@ -1,7 +1,7 @@
 const pictureInnerContainer = document.querySelector('.picture__inner-container');
 
 
-let images = ['/app/images/galery/galery1.jpg', '/app/images/galery/galery2.jpg', '/app/images/galery/galery3.jpg', '/app/images/galery/galery4.jpg', '/app/images/galery/galery5.jpg', '/app/images/galery/galery6.jpg', '/app/images/galery/galery7.jpg', '/app/images/galery/galery8.jpg', '/app/images/galery/galery9.jpg', '/app/images/galery/galery10.jpg', '/app/images/galery/galery11.jpg', '/app/images/galery/galery12.jpg', '/app/images/galery/galery13.jpg', '/app/images/galery/galery14.jpg', '/app/images/galery/galery15.jpg']
+let images = ['./app/images/galery/galery1.jpg', './app/images/galery/galery2.jpg', './app/images/galery/galery3.jpg', './app/images/galery/galery4.jpg', './app/images/galery/galery5.jpg', './app/images/galery/galery6.jpg', './app/images/galery/galery7.jpg', './app/images/galery/galery8.jpg', './app/images/galery/galery9.jpg', './app/images/galery/galery10.jpg', './app/images/galery/galery11.jpg', './app/images/galery/galery12.jpg', './app/images/galery/galery13.jpg', './app/images/galery/galery14.jpg', './app/images/galery/galery15.jpg']
 
 
 function shuffle(array) {
